@@ -1,6 +1,404 @@
 <!DOCTYPE html>
 <html>
+<!--Dictionary will be broken up into 3 types:
+<link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/ukij-cjk" type="text/css"/>
+- topic, so for example you pick plant, then fruit, then apple
+- search, so you search up apple and get the result
+- alphabetical, where you pick a, then ap, then scroll down to apple-->
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100;300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+  @import url('https://fontlibrary.org//face/ukij-cjk');
+  @import url('https://fontlibrary.org//face/ukij-kawak');
+  </style>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOQAT Persian Dictionary</title>
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/zefadora/loqat/e0fcef2e0dabfd45d0339caa07351c3968c62a3d/shlogo.ico">
   </head>
   <body>
-    <p>blablabla testing</p>
+    <div class="namm">
+      <div class="dropdown"><button onclick="myFunction()" class="dropbtn">dictionary</button></div>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="alph.html">Alphabetical</a>
+          <a href="top.html">Topic</a>
+          <a href="ser.html">Search</a>
+        </div>
+      <div class="dropdown"><button class="dropbtn">test</button></div>
+      <div class="dropdown"><button class="dropbtn">test</button></div>
+      <div class="dropdown"><button class="dropbtn">test</button></div>
+      <div class="dropdown"><a href="index.html"><button class="homebtn">لغت</button></a></div>
+    </div>
+    <div class="mainblock">
+      <h1>Alphabetical Dictionary</h1>
+      <hr>
+      <div class="h2a">
+        <h2>English to Farsi</h2>
+        <hr>
+        <table>
+          <tr>
+            <th>a-m</th>
+            <th>n-z</th>
+          </tr>
+          <tr>
+            <td>a</td>
+            <td>n</td>
+          </tr>
+          <tr>
+            <td>b</td>
+            <td>o</td>
+          </tr>
+          <tr>
+            <td>c</td>
+            <td>p</td>
+          </tr>
+          <tr>
+            <td>d</td>
+            <td>q</td>
+          </tr>
+          <tr>
+            <td>e</td>
+            <td>r</td>
+          </tr>
+          <tr>
+            <td>f</td>
+            <td>s</td>
+          </tr>
+          <tr>
+            <td>g</td>
+            <td>t</td>
+          </tr>
+          <tr>
+            <td>h</td>
+            <td>u</td>
+          </tr>
+          <tr>
+            <td>i</td>
+            <td>v</td>
+          </tr>
+          <tr>
+            <td>j</td>
+            <td>w</td>
+          </tr>
+          <tr>
+            <td>k</td>
+            <td>x</td>
+          </tr>
+          <tr>
+            <td>l</td>
+            <td>y</td>
+          </tr>
+          <tr>
+            <td>m</td>
+            <td>z</td>
+          </tr>
+        </table>
+      </div>
+      <div class="h2a">
+        <h2>Farsi to English</h2>
+        <hr>
+        <table>
+          <tr>
+            <th>a-m</th>
+            <th>n-z</th>
+            <th>ع-ی</th>
+            <th>خ-ظ</th>
+            <th>ء-ح</th>
+          </tr>
+          <tr>
+            <td>a</td>
+            <td>n</td>
+            <td>ع</td>
+            <td>خ</td>
+            <td>ء</td>
+          </tr>
+          <tr>
+            <td>b</td>
+            <td>o</td>
+            <td>غ</td>
+            <td>د</td>
+            <td>أ</td>
+          </tr>
+          <tr>
+            <td>c</td>
+            <td>p</td>
+            <td>ف</td>
+            <td>ذ</td>
+            <td>ئ</td>
+          </tr>
+          <tr>
+            <td>d</td>
+            <td>q</td>
+            <td>ق</td>
+            <td>ر</td>
+            <td>ؤ</td>
+          </tr>
+          <tr>
+            <td>e</td>
+            <td>r</td>
+            <td>ک</td>
+            <td>ز</td>
+            <td>ا</td>
+          </tr>
+          <tr>
+            <td>f</td>
+            <td>s</td>
+            <td>گ</td>
+            <td>ژ</td>
+            <td>ب</td>
+          </tr>
+          <tr>
+            <td>g</td>
+            <td>t</td>
+            <td>ل</td>
+            <td>س</td>
+            <td>پ</td>
+          </tr>
+          <tr>
+            <td>h</td>
+            <td>u</td>
+            <td>م</td>
+            <td>ش</td>
+            <td>ت</td>
+          </tr>
+          <tr>
+            <td>i</td>
+            <td>v</td>
+            <td>ن</td>
+            <td>ص</td>
+            <td>ث</td>
+          </tr>
+          <tr>
+            <td>j</td>
+            <td>w</td>
+            <td>و</td>
+            <td>ض</td>
+            <td>ج</td>
+          </tr>
+          <tr>
+            <td>k</td>
+            <td>x</td>
+            <td>ه</td>
+            <td>ط</td>
+            <td>چ</td>
+          </tr>
+          <tr>
+            <td>l</td>
+            <td>y</td>
+            <td>ی</td>
+            <td>ظ</td>
+            <td>ح</td>
+          </tr>
+          <tr>
+            <td>m</td>
+            <td>z</td>
+          </tr>
+        </table>
+      </div>
+      <p></p>
+    </div>
+  </body>
+</html>
+
+<style type="text/css">
+
+html {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  scroll-behavior: smooth;
+}
+html, body {
+  margin:0px;
+  padding:0px;
+}
+body {
+  height: 100vh;
+  background: linear-gradient(45deg, #757BC8, #8187DC, #8E94F2, #9FA0FF,
+    #ADA7FF, #BBADFF, #CBB2FE, #DAB6FC, #DDBDFC, #E0C3FC );
+  background-size: 400% 400%;
+  animation: gradient 5s ease-out .2s 1 both;
+  z-index: 1;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-attachment: fixed;
+}
+@keyframes gradient {
+  0% {
+  	background-position: 0% 50%;
+	}
+  100% {
+    background-position: 50% 100%;
+  }
+}
+html::-webkit-scrollbar {
+  display:none;
+}
+a {
+  color:inherit;
+  text-decoration: none;
+  cursor: crosshair;
+}
+.mainblock {
+  display: inline-block;
+  background-color: white;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  float:center;
+  width:50vw;
+  height:1000px;
+  padding: 25px;
+  position:relative;
+  margin:10vw 25vw;
+  z-index:5;
+}
+
+.mainblock h1 {
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+  font-size:3vw;
+  padding:10px;
+}
+.h2a {
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+  width:21.5vw;
+  height:725px;
+  border-color:black;
+  display:inline-block;
+  background-color:pink;
+  padding:1vw;
+  z-index:5;
+}
+.h2a h2 {
+  font-size:3vw;
+}
+
+.h2a th {
+  font-size:2vw;
+}
+.h2a td {
+  font-size:1.25vw;
+}
+
+.namm {
+  margin:0;
+  display:block;
+  position:fixed;
+  z-index:6;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  background-size:contain;
+  display: block;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  float:center;
+  width:20vw;
+  height:10vh;
+  padding: 0;
+  position:relative;
+  margin:0;
+}
+/* Dropdown button */
+.dropdown .dropbtn {
+  border: none;
+  outline: none;
+  width:20vw;
+  height:10vh;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+/* Dropdown button */
+.dropdown .homebtn {
+  border: none;
+  outline: none;
+  width:20vw;
+  height:10vh;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+/* Add a red background color to navbar links on hover */
+a:hover, .dropdown:hover .dropbtn {
+  color: #E86B7E;
+  background-color: black;
+  transition-duration: .5s;
+}
+/* Add a red background color to navbar links on hover */
+a:hover, .dropdown:hover .homebtn {
+  color: #E86B7E;
+  background-color: black;
+  transition-duration: .5s;
+}
+a, .dropdown .dropbtn {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 3vw; /*here's the font size bb*/
+  color: #32127A;
+  transition-duration: .5s;
+}
+a, .dropdown .homebtn {
+  font-family:'UKIJKawak3DRegular';
+  font-size: 3vw; /*here's the font size bb*/
+  color: #32127A;
+  transition-duration: .5s;
+}
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  font-family: 'Bebas Neue', cursive;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  font-size:2vw;
+  width:20%;
+  margin-top: 10vh;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 4;
+  transition-duration: .5s;
+
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  font-family: 'Bebas Neue', cursive;
+  text-decoration: none;
+  display: block;
+  overflow:auto;
+  text-align: left;
+}
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #black;
+  color: white;
+}
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;  transition-duration: .5s;}
+</style>
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+</script>
