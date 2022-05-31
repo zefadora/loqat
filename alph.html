@@ -14,17 +14,24 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOQAT Persian Dictionary</title>
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/zefadora/loqat/e0fcef2e0dabfd45d0339caa07351c3968c62a3d/shlogo.ico">
   </head>
   <body>
     <div class="namm">
-      <div class="dropdown"><button onclick="myFunction()" class="dropbtn">dictionary</button></div>
-        <div id="myDropdown" class="dropdown-content">
+      <div class="dropdown"><button onclick="brFunction()" class="dropbtn">browse</button></div>
+        <div id="brDrop" class="dropdown-content">
           <a href="alph.html">Alphabetical</a>
           <a href="top.html">Topic</a>
-          <a href="ser.html">Search</a>
+          <a href="ser.html"></a>
         </div>
-      <div class="dropdown"><button class="dropbtn">test</button></div>
+      <div class="dropdown"><button onclick="seFunction()" class="dropbtn">search</button></div>
+        <div id="serDrop" class="dropdown-content">
+          <a href="sere.html">english</a>
+          <a href="serp.html">persian</a>
+          <a href="sert.html">transliterated persian</a>
+        </div>
       <div class="dropdown"><button class="dropbtn">test</button></div>
       <div class="dropdown"><button class="dropbtn">test</button></div>
       <div class="dropdown"><a href="index.html"><button class="homebtn">لغت</button></a></div>
@@ -380,26 +387,3 @@ a, .dropdown .homebtn {
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;  transition-duration: .5s;}
 </style>
-
-<script>
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-
-</script>
