@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<!--Dictionary will be broken up into 3 types:
+<link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/ukij-cjk" type="text/css"/>
+- topic, so for example you pick plant, then fruit, then apple
+- search, so you search up apple and get the result
+- alphabetical, where you pick a, then ap, then scroll down to apple-->
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100;300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+  @import url('https://fontlibrary.org//face/ukij-cjk');
+  @import url('https://fontlibrary.org//face/ukij-kawak');
+  </style>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOQAT Persian Dictionary</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="scripts.js"></script>
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/zefadora/loqat/e0fcef2e0dabfd45d0339caa07351c3968c62a3d/shlogo.ico">
+  </head>
+  <body>
+    <div class="namm">
+      <div class="dropdown"><button onclick="brFunction()" class="dropbtn">browse</button></div>
+        <div id="brDrop" class="dropdown-content">
+          <a href="alph.html">Alphabetical</a>
+          <a href="top.html">Topic</a>
+          <a href="ser.html"></a>
+        </div>
+      <div class="dropdown"><button onclick="seFunction()" class="dropbtn">search</button></div>
+        <div id="serDrop" class="dropdown-content">
+          <a href="sere.html">english</a>
+          <a href="serp.html">persian</a>
+          <a href="sert.html">transliterated persian</a>
+        </div>
+      <div class="dropdown"><button class="dropbtn">test</button></div>
+      <div class="dropdown"><button class="dropbtn">test</button></div>
+      <div class="dropdown"><a href="index.html"><button class="homebtn">لغت</button></a></div>
+    </div>
+    <div class="mainblock">
+      <h1>Alphabetical Dictionary</h1>
+      <hr>
+      <div class="h2a">
+        <h2>English to Farsi</h2>
+        <hr>
+        <table>
+          <tr>
+            <th>a-m</th>
+            <th>n-z</th>
+          </tr>
+          <tr>
+            <td>a</td>
+            <td>n</td>
+          </tr>
+          <tr>
+            <td>b</td>
+            <td>o</td>
+          </tr>
+          <tr>
+            <td>c</td>
+            <td>p</td>
+          </tr>
+          <tr>
+            <td>d</td>
+            <td>q</td>
+          </tr>
+          <tr>
+            <td>e</td>
+            <td>r</td>
+          </tr>
+          <tr>
+            <td>f</td>
+            <td>s</td>
+          </tr>
+          <tr>
+            <td>g</td>
+            <td>t</td>
+          </tr>
+          <tr>
+            <td>h</td>
+            <td>u</td>
+          </tr>
+          <tr>
+            <td>i</td>
+            <td>v</td>
+          </tr>
+          <tr>
+            <td>j</td>
+            <td>w</td>
+          </tr>
+          <tr>
+            <td>k</td>
+            <td>x</td>
+          </tr>
+          <tr>
+            <td>l</td>
+            <td>y</td>
+          </tr>
+          <tr>
+            <td>m</td>
+            <td>z</td>
+          </tr>
+        </table>
+      </div>
+      <div class="h2a">
+        <h2>Farsi to English</h2>
+        <hr>
+        <table>
+          <tr>
+            <th>a-m</th>
+            <th>n-z</th>
+            <th>ع-ی</th>
+            <th>خ-ظ</th>
+            <th>ء-ح</th>
+          </tr>
+          <tr>
+            <td>a</td>
+            <td>n</td>
+            <td>ع</td>
+            <td>خ</td>
+            <td>ء</td>
+          </tr>
+          <tr>
+            <td>b</td>
+            <td>o</td>
+            <td>غ</td>
+            <td>د</td>
+            <td>أ</td>
+          </tr>
+          <tr>
+            <td>c</td>
+            <td>p</td>
+            <td>ف</td>
+            <td>ذ</td>
+            <td>ئ</td>
+          </tr>
+          <tr>
+            <td>d</td>
+            <td>q</td>
+            <td>ق</td>
+            <td>ر</td>
+            <td>ؤ</td>
+          </tr>
+          <tr>
+            <td>e</td>
+            <td>r</td>
+            <td>ک</td>
+            <td>ز</td>
+            <td>ا</td>
+          </tr>
+          <tr>
+            <td>f</td>
+            <td>s</td>
+            <td>گ</td>
+            <td>ژ</td>
+            <td>ب</td>
+          </tr>
+          <tr>
+            <td>g</td>
+            <td>t</td>
+            <td>ل</td>
+            <td>س</td>
+            <td>پ</td>
+          </tr>
+          <tr>
+            <td>h</td>
+            <td>u</td>
+            <td>م</td>
+            <td>ش</td>
+            <td>ت</td>
+          </tr>
+          <tr>
+            <td>i</td>
+            <td>v</td>
+            <td>ن</td>
+            <td>ص</td>
+            <td>ث</td>
+          </tr>
+          <tr>
+            <td>j</td>
+            <td>w</td>
+            <td>و</td>
+            <td>ض</td>
+            <td>ج</td>
+          </tr>
+          <tr>
+            <td>k</td>
+            <td>x</td>
+            <td>ه</td>
+            <td>ط</td>
+            <td>چ</td>
+          </tr>
+          <tr>
+            <td>l</td>
+            <td>y</td>
+            <td>ی</td>
+            <td>ظ</td>
+            <td>ح</td>
+          </tr>
+          <tr>
+            <td>m</td>
+            <td>z</td>
+          </tr>
+        </table>
+      </div>
+      <p></p>
+    </div>
+  </body>
+</html>
