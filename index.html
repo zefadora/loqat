@@ -17,17 +17,24 @@
   </head>
   <body>
     <div class="namm">
-      <div class="dropdown"><button onclick="myFunction()" class="dropbtn">dictionary</button></div>
-        <div id="myDropdown" class="dropdown-content">
+      <div class="dropdown"><button onclick="brFunction()" class="dropbtn">browse</button></div>
+        <div id="brDrop" class="dropdown-content">
           <a href="alph.html">Alphabetical</a>
-          <a href="#">Topic</a>
-          <a href="#">Search</a>
+          <a href="top.html">Topic</a>
+          <a href="ser.html"></a>
         </div>
-      <div class="dropdown"><button class="dropbtn">test</button></div>
+      <div class="dropdown"><button onclick="seFunction()" class="dropbtn">search</button></div>
+        <div id="serDrop" class="dropdown-content">
+          <a href="sere.html">english</a>
+          <a href="serp.html">persian</a>
+          <a href="sert.html">transliterated persian</a>
+        </div>
       <div class="dropdown"><button class="dropbtn">test</button></div>
       <div class="dropdown"><button class="dropbtn">test</button></div>
       <div class="dropdown"><a href="index.html"><button class="homebtn">لغت</button></a></div>
     </div>
+
+    <div class=""
   </body>
 </html>
 
@@ -144,7 +151,7 @@ a, .dropdown .homebtn {
   background-color: #f9f9f9;
   min-width: 160px;
   font-size:2vw;
-  width:20%;
+  width:100%;
   margin-top: 10vh;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 4;
@@ -176,8 +183,12 @@ a, .dropdown .homebtn {
 <script>
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
+function brFunction() {
+  document.getElementById("brDrop").classList.toggle("show");
+}
+
+function seFunction() {
+  document.getElementById("serDrop").classList.toggle("show");
 }
 
 // Close the dropdown menu if the user clicks outside of it
@@ -193,4 +204,5 @@ window.onclick = function(event) {
     }
   }
 }
+
 </script>
